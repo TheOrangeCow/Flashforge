@@ -7,7 +7,7 @@ import socket
 
 
 app = Flask(__name__)
-app.secret_key = 'afdjh;uo5456uy9ouhgfnol'
+app.secret_key = ''
 
 PORT = 8899
 
