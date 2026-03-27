@@ -383,7 +383,7 @@ def send_command(sock, cmd):
     return sock.recv(1024).decode(errors='ignore')
 
 
-@app.route('/printer', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def control():
     ip = request.args.get('ip')
     if not ip:
